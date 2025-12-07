@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fragrance Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CreateYrScent.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">49 SCENTS</div>
+        <ul class="nav-links">
+            <li><a href="./HomePage.html">Home</a></li>
+            <li><a href="./Collection.html">Collection</a></li>
+            <li><a href="./CreateYrScent.html">Create your scent</a></li>
+            <li><a href="./Reviews.html">Reviews</a></li>
+            <li><a href="./Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    
+    <h1 style="font-family: 'Quintessential'; font-size: 38px;">Make Your Message Has An Impact</h1>
+    <div class="main-container">
+        <img src="./Images/MessageUs/particlevanilla.png" class="scatter-img"
+            style="top: 150px; left: 100px; rotate: -15deg;">
+        <img src="./Images/MessageUs/particlevanilla2.png" class="scatter-img"
+            style="top: 350px; right: 100px; rotate: 10deg;">
+        <img src="./Images/MessageUs/particlevanilla3.png" class="scatter-img"
+            style="bottom: 200px; left: 100px; rotate: 5deg;">
+        <img src="./Images/MessageUs/particlevanilla4.png" class="scatter-img"
+            style="bottom: 150px; right: 80px; rotate: -10deg;">
+    <div class="form-container">
+        <form action="https://formsubmit.co/info@frangrancy49.com" method="POST">
+
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="email123@gmail.com">
+
+            <label for="DropDown">Topic of the message:</label>
+            <select id="DropDown" name="DropDown" required>
+                <option value="General Question">General Question</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="Order Issue">Order Issue</option>
+                <option value="Perfume Recommendation Request">Perfume Recommendation Request</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required
+                placeholder="Feel free to make your message more detailed by typing..."></textarea>
+
+            <label for="DropDown2">Preferred perfume category (optional):</label>
+            <select id="DropDown2" name="DropDown2">
+                <option value="">--Select a category--</option>
+                <option value="Floral">Floral</option>
+                <option value="Oriental">Oriental</option>
+                <option value="Fresh">Fresh</option>
+                <option value="Woody">Woody</option>
+                <option value="Fruity">Fruity</option>
+                <option value="Spicy">Spicy</option>
+            </select>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3 style="font-family: 'Quintessential';">49 SCENTS</h3>
+                <p>
+                    Captivating fragrances designed to elevate your everyday moments. Discover your signature scent with
+                    us.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/HomePage.html">Home</a></li>
+                    <li><a href="./Collection.html">Collection</a></li>
+                    <li><a href="./CreateYrScent.html">Create your scent</a></li>
+                    <li><a href="./Reviews.html">Reviews</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@49 SCENTS.com</p>
+                <p>Phone: +212 512 345 678</p>
+                <p>Address: Marrakech, Morocco</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Whatsapp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 49 SCENTS. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

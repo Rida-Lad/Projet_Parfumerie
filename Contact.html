@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fragrance Showcase</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quintessential&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">49 SCENTS</div>
+    <ul class="nav-links">
+      <li><a href="./HomePage.html">Home</a></li>
+      <li><a href="./Collection.html">Collection</a></li>
+      <li><a href="./CreateYrScent.html">Create your scent</a></li>
+      <li><a href="./Reviews.html">Reviews</a></li>
+      <li><a href="./Contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <h1 style="font-family: 'Quintessential'; font-size: 38px;">Feel Free To Reach Out</h1>
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="contact-block">
+        <h2>Address</h2>
+        <p>123 Fragrance St., Marrakech, Morocco</p>
+      </div>
+      <div class="contact-block">
+        <h2>Email</h2>
+        <span>info@fragrancy49.com</span>
+      </div>
+    </div>
+    <div id="map" style="height: 500px; width: 50%;"></div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3 style="font-family: 'Quintessential';">49 SCENTS</h3>
+        <p>
+          Captivating fragrances designed to elevate your everyday moments. Discover your signature scent with
+          us.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/HomePage.html">Home</a></li>
+          <li><a href="./Collection.html">Collection</a></li>
+          <li><a href="./CreateYrScent.html">Create you scent</a></li>
+          <li><a href="./Reviews.html">Reviews</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: info@fragrancy49.com</p>
+        <p>Phone: +212 512 345 678</p>
+        <p>Address: Marrakech, Morocco</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">Whatsapp</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fragrancy49. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  const map = L.map('map').setView([31.647022, - 7.998504], 15);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+  }).addTo(map);
+
+  L.marker([31.647022, - 7.998504]).addTo(map);
+</script>
+
+
+</html>
