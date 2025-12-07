@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: 'Outfit', sans-serif;
@@ -82,7 +89,7 @@ footer {
   width: 100%;
   background-image: linear-gradient(to right, rgb(248, 248, 248), white);
   color: #000000;
-  padding: 50px 150px;
+  padding: 50px 0px;
 }
 
 .footer-container {
