@@ -1,105 +1,212 @@
 body {
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    overflow-x: hidden;
-    box-sizing: border-box;
+margin: 0;
+font-family: 'Outfit', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #fff;
+overflow-x: hidden;
+box-sizing: border-box;
 }
+
 /* Navbar */
 
 .navbar {
-    width: 90%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
+width: 90%;
+padding: 20px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+top: 0;
 }
 
 .logo {
-    font-family: 'Quintessential', cursive;
-    font-size: 28px;
-    font-weight: bold;
-    color: #000000;
+font-family: 'Quintessential', cursive;
+font-size: 28px;
+font-weight: bold;
+color: #000000;
 }
 
 .nav-links {
-    font-size: 20px;
-    list-style: none;
-    display: flex;
-    gap: 60px;
+font-size: 20px;
+list-style: none;
+display: flex;
+gap: 60px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    transition: color 0.3s ease;
+text-decoration: none;
+color: #000000;
+font-weight: 500;
+transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #7f7f5f;
+color: #7f7f5f;
+}
+
+
+/* Reviews Section */
+.reviews-section {
+width: 100%;
+padding: 40px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #fafafa;
+}
+
+.section-title {
+font-family: 'Quintessential', sans-serif;
+font-size: 2.5rem;
+font-weight: 500;
+color: #000000;
+margin-bottom: 60px;
+text-align: center;
+}
+
+.reviews-container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+max-width: 1200px;
+width: 100%;
+gap: 40px;
+}
+
+.review-card {
+background: #ffffff;
+border-radius: 8px;
+padding: 60px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: flex;
+flex-direction: column;
+}
+
+.review-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+border-top: 3px solid #7f7f5f;
+}
+
+.review-header {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.reviewer-avatar {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: #f0f0f0;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 15px;
+color: #7f7f5f;
+font-weight: 600;
+font-size: 30px;
+}
+
+.reviewer-info {
+display: flex;
+flex-direction: column;
+}
+
+.reviewer-name {
+font-weight: 600;
+color: #000000;
+font-size: 20px;
+margin-bottom: 5px;
+}
+
+.reviewer-title {
+font-weight: 300;
+color: #7b7b7b;
+font-size: 14px;
+}
+
+.review-text {
+line-height: 1.6;
+color: #333333;
+margin-bottom: 25px;
+flex-grow: 1;
+font-size: 16px;
+}
+
+.review-rating {
+color: #7f7f5f;
+font-size: 18px;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.review-date {
+font-size: 12px;
+color: #959595;
+text-align: right;
 }
 
 
 /* Footer Section */
 
 footer {
-    width: 100%;
-    background-image: linear-gradient(to right, rgb(248, 248, 248), white);
-    color: #000000;
-    padding: 50px 150px;
+width: 100%;
+background-image: linear-gradient(to right, rgb(248, 248, 248), white);
+color: #000000;
+padding: 50px 150px;
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 20px;
 }
 
 
 .footer-container div {
-    font-size: 20px;
-    min-width: 300px;
+font-size: 20px;
+min-width: 300px;
 }
 
-.footer-about, .footer-contact {
-    padding-left: 50px;
-    max-width: 350px;
+.footer-about,
+.footer-contact {
+padding-left: 50px;
+max-width: 350px;
 }
 
 .footer-links ul {
-    list-style: none;
-    padding: 0;
+list-style: none;
+padding: 0;
 }
 
 .footer-links ul li {
-    margin: 8px 0;
+margin: 8px 0;
 }
 
 .footer-links a,
 .footer-social a {
-    line-height: 2rem;
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.3s;
+line-height: 2rem;
+color: #000000;
+text-decoration: none;
+transition: color 0.3s;
 }
 
 .footer-links a:hover,
 .footer-social a:hover {
-    color: #959595;
+color: #959595;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid #aaaaaa;
-    padding-top: 15px;
-    font-size: 18px;
-    color: #7b7b7b;
+text-align: center;
+margin-top: 30px;
+border-top: 1px solid #aaaaaa;
+padding-top: 15px;
+font-size: 18px;
+color: #7b7b7b;
 }
